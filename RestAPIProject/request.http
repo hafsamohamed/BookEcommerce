@@ -1,0 +1,135 @@
+#########################User
+GET http://localhost:9797/restapi/api/users HTTP/1.1
+Accept: application/json
+
+###
+
+GET http://localhost:9797/restapi/api/users/12 HTTP/1.1
+Accept: application/json
+
+
+###
+POST  http://localhost:9797/restapi/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "birthDate": "1997-03-31",
+    "userType": "CLIENT",
+    "userName": "ahmeedd",
+    "email": "hafsaa@gmail.com",
+    "country": "Egypt",
+    "city": "Cairo",
+    "detailedAddress": "maryoutya Giza",
+    "phoneNumber": "01121409443",
+    "wallet": 2000,
+    "password": "ahmed123"
+
+}
+
+###
+
+PUT  http://localhost:9797/restapi/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "birthDate": "1997-03-31",
+    "userType": "CLIENT",
+    "userName": "ahmed elsayed",
+    "email": "hafsaa@gmail.com",
+    "country": "Egypt",
+    "city": "Cairo000000",
+    "detailedAddress": "maryoutya Giza",
+    "phoneNumber": "01121409443",
+    "wallet": 2000,
+    "password": "ahmed123"
+
+}
+
+###
+DELETE  http://localhost:9797/restapi/api/users/2 HTTP/1.1
+Accept: application/json
+
+#########################Product
+GET http://localhost:9797/restapi/api/products HTTP/1.1
+Accept: application/json
+
+###
+
+GET http://localhost:9797/restapi/api/products/8 HTTP/1.1
+Accept: application/json
+
+###
+POST  http://localhost:9797/restapi/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+  "name":"Book3",
+  "price":300.0,
+  "quantity":100,
+  "description":"Book3"
+}
+
+###
+
+PUT  http://localhost:9797/restapi/api/products HTTP/1.1
+Content-Type: application/json
+
+{
+  "name":"Book5",
+  "price":3000.0,
+  "quantity":1000,
+  "description":"Book3"
+}
+
+###
+DELETE  http://localhost:9797/restapi/api/products/7 HTTP/1.1
+Accept: application/json
+
+#########################Cart
+GET http://localhost:9797/restapi/api/cart HTTP/1.1
+Accept: application/json
+
+###
+
+GET http://localhost:9797/restapi/api/cart/1 HTTP/1.1
+Accept: application/json
+
+###
+POST  http://localhost:9797/restapi/api/cart/1/8/10 HTTP/1.1
+Content-Type: application/json
+
+
+###
+
+PUT  http://localhost:9797/restapi/api/cart/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name":"Book3",
+  "price":30000.0,
+  "quantity":100,
+  "description":"Book3"
+}
+
+###
+DELETE  http://localhost:9797/restapi/api/cart/1/8 HTTP/1.1
+Accept: application/json
+
+#########################Order
+GET http://localhost:9797/restapi/api/order HTTP/1.1
+Accept: application/json
+
+###
+
+GET http://localhost:9797/restapi/api/order/1 HTTP/1.1
+Accept: application/json
+
+###
+POST  http://localhost:9797/restapi/api/order/1 HTTP/1.1
+Content-Type: application/json
+
+###
+DELETE  http://localhost:9797/restapi/api/order/8/2 HTTP/1.1
+Accept: application/json
+
+
