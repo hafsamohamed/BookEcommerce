@@ -37,7 +37,8 @@ FLUSH PRIVILEGES;
 
 **Post Man**
 * Create a Collection Book Store using post man tool using the following:
-```Requests for sub collections : user - book - cart - order
+```sql
+Requests for sub collections : user - book - cart - order
 Get: get all or specific element;
 Post: to add new element;
 Put: update the element;
