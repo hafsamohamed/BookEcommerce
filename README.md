@@ -36,7 +36,7 @@ FLUSH PRIVILEGES;
 ```
 
 **Post Man**
-* Create a Collection Book Stor using post man tool 8.0 using the following:
+* Create a Collection Book Store using post man tool using the following:
 ```Requests for sub collections : user - book - cart - order
 Get: get all or specific element;
 Post: to add new element;
@@ -44,7 +44,7 @@ Put: update the element;
 Delete: remove the element;
 ```
 # Documentation
-* [Post Man](https://documenter.getpostman.com/view/8513190/UyxdK9KL)
+* [Postman Documentation Link](https://documenter.getpostman.com/view/8513190/UyxdK9KL)
 
 
 # 👷‍♀️ Contributors
